@@ -1,0 +1,17 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <!--注册全局作用域监听器ContextLoaserListener用来创建spring容器-->
+  <context-param>
+    <!--contextConfigLocation用来去表示配置文件的路径的    -->
+    <param-name>contextConfigLocation</param-name>
+    <!--自定义配置文件的路径    -->
+    <param-value>classpath:dubbo01.xml</param-value>
+  </context-param>
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+
+</web-app>
